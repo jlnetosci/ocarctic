@@ -4,3 +4,4 @@ streamlit-cropper==0.2.2
 pillow==10.3.0
 st-pages==0.4.5
 st-social-media-links==0.1.1
+streamlit-js-eval==0.1.5
