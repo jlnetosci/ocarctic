@@ -56,8 +56,8 @@ def call_ai_api(text, instruction):
         "Authorization": f"Bearer {quiqui}"
     }
     response = requests.post(url, json=payload, headers=headers)
-    response.raise_for_status()
-    result = response.json()
+    json_result = response.text
+    result = json.loads(json_result)
     txt = result["output"]["choices"][0]["text"]
     return txt
 
